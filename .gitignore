@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Outputs / cache
+omdb_cache.json
+enriched*.csv
+enriched*.xlsx
+*.log
