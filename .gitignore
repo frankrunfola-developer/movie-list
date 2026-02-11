@@ -12,6 +12,6 @@ Thumbs.db
 
 # Outputs / cache
 omdb_cache.json
-enriched*.csv
-enriched*.xlsx
+#enriched*.csv
+#enriched*.xlsx
 *.log

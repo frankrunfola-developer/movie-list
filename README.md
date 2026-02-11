@@ -38,15 +38,17 @@ Get a key: https://www.omdbapi.com/apikey.aspx
 
 Set it:
 
-### macOS / Linux
-```bash
-export OMDB_API_KEY="7ff6c487"
-```
+
 
 ### Windows (PowerShell)
 ```powershell
 setx OMDB_API_KEY "YOUR_KEY_HERE"
 # reopen terminal after running setx
+```
+
+### macOS / Linux
+```bash
+export OMDB_API_KEY="7ff6c487"
 ```
 
 ## Run
