@@ -40,7 +40,7 @@ Set it:
 
 ### macOS / Linux
 ```bash
-export OMDB_API_KEY="YOUR_KEY_HERE" (7ff6c487)
+export OMDB_API_KEY="7ff6c487"
 ```
 
 ### Windows (PowerShell)
@@ -52,13 +52,13 @@ setx OMDB_API_KEY "YOUR_KEY_HERE"
 ## Run
 
 ```bash
-python enrich_movies_omdb_csv.py input.csv enriched.csv
+python enrich_movies_omdb_csv.py movies_final_alphabetical_v3.csv enriched.csv
 ```
 
 Optional Excel output:
 
 ```bash
-python enrich_movies_omdb_csv.py input.csv enriched.csv --xlsx enriched.xlsx
+python enrich_movies_omdb_csv.py movies_final_alphabetical_v3.csv enriched.csv --xlsx enriched.xlsx
 ```
 
 ## Useful flags
