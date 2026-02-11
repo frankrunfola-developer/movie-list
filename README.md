@@ -52,13 +52,13 @@ setx OMDB_API_KEY "YOUR_KEY_HERE"
 ## Run
 
 ```bash
-python enrich_movies_omdb_csv.py movies_final_alphabetical_v3.csv enriched.csv
+python enrich_movies_omdb_csv.py movies_in_small.csv enriched.csv
 ```
 
 Optional Excel output:
 
 ```bash
-python enrich_movies_omdb_csv.py movies_final_alphabetical_v3.csv enriched.csv --xlsx enriched.xlsx
+python enrich_movies_omdb_csv.py movies_in_small.csv enriched.csv --xlsx enriched.xlsx
 ```
 
 ## Useful flags
