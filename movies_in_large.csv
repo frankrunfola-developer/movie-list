@@ -1,4 +1,4 @@
-Row,Title,Year,Genre,imdbRating,Actors (Main),BoxOffice
+Row,Title,Year,Genre,imdbRating,Actors,BoxOffice
 1,10 Things I Hate About You,,,,,
 2,12 Angry Men,,,,,
 3,10 Cloverfield Lane,,,,,
@@ -261,7 +261,7 @@ Row,Title,Year,Genre,imdbRating,Actors (Main),BoxOffice
 260,Mission To Mars,,,,,
 261,Money Train,,,,,
 262,Moneyball,,,,,
-263,Monsters Ball,,,,,
+263,Monster's Ball,,,,,
 264,Mr. & Mrs. Smith,,,,,
 265,Mr. Deeds,,,,,
 266,Mrs. Doubtfire,,,,,
@@ -483,7 +483,7 @@ Row,Title,Year,Genre,imdbRating,Actors (Main),BoxOffice
 482,Unforgiven,,,,,
 483,Unstoppable,,,,,
 484,Urban Legend,,,,,
-485,US Marshals,,,,,
+485,U.S. Marshals,,,,,
 486,Venom,,,,,
 487,Vertical Limit,,,,,
 488,Volcano,,,,,

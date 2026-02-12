@@ -4,7 +4,7 @@ enrich_movies_omdb_csv.py
 
 Enrich a movie CSV using OMDb.
 - Input CSV must include: Title (Year optional)
-- Output fills: Year, Genre, imdbRating, Actors (Main), BoxOffice
+- Output fills: Year, Genre, imdbRating, Actors, BoxOffice
 - Prints one line per movie as it is queried (or served from cache)
 
 Env:
@@ -83,7 +83,7 @@ def make_key(title: str, year: str) -> str:
 
 
 def ensure_columns(df: pd.DataFrame) -> pd.DataFrame:
-    required = ["Row", "Title", "Year", "Genre", "imdbRating", "Actors (Main)", "BoxOffice"]
+    required = ["Row", "Title", "Year", "Genre", "imdbRating", "Actors", "BoxOffice"]
     for c in required:
         if c not in df.columns:
             df[c] = ""
@@ -132,7 +132,7 @@ def main() -> int:
     df = ensure_columns(df)
 
     # Force target columns to TEXT so pandas never throws dtype errors
-    text_cols = ["Title", "Year", "Genre", "imdbRating", "Actors (Main)", "BoxOffice"]
+    text_cols = ["Title", "Year", "Genre", "imdbRating", "Actors", "BoxOffice"]
     for c in text_cols:
         df[c] = df[c].astype("string")
 
@@ -167,15 +167,25 @@ def main() -> int:
                 src = "API"
                 time.sleep(args.sleep)
 
-            # Print one line per movie as requested
+            # Print one line per movie 
             if isinstance(data, dict) and data.get("Response") == "True":
-                found_title = clean_text(data.get("Title", ""))
+                found_title = str(clean_text(data.get("Title", "")))[:40]
                 found_year = clean_text(data.get("Year", ""))
                 rating = clean_text(data.get("imdbRating", ""))
-                print(f"[{i+1}/{total}] {src} OK | {title} ({year or '----'}) -> {found_title} ({found_year}) | imdb={rating}")
+                actors = clean_text(data.get("Actors", ""))
+                boxOffice = clean_text(data.get("BoxOffice", ""))
+                print(
+                    f"[{i+1}/{total}] "
+                    f"{src:<{15}} "
+                    f"{found_title:<{40}} "
+                    f"{found_year:<{10}} "
+                    f"{rating:<{15}} "
+                    f"{actors:<{60}} "
+                    f"{boxOffice:<{20}}"
+                )
             else:
                 err = clean_text((data or {}).get("Error", "Unknown"))
-                print(f"[{i+1}/{total}] {src} NOT FOUND | {title} ({year or '----'}) | {err}")
+                print(f"[{i+1}/{total}] {src} NOT FOUND {title:<{40}} {year:<{10}}  {err}")
 
             if args.print_json:
                 print(f"JSON: {data}\n")
@@ -192,7 +202,7 @@ def main() -> int:
                 put_if_value(df, i, "Year", data.get("Year", ""))
             put_if_value(df, i, "Genre", data.get("Genre", ""))
             put_if_value(df, i, "imdbRating", data.get("imdbRating", ""))
-            put_if_value(df, i, "Actors (Main)", data.get("Actors", ""))
+            put_if_value(df, i, "Actors", data.get("Actors", ""))
             put_if_value(df, i, "BoxOffice", data.get("BoxOffice", ""))
         else:
             # Tag not found (keeps a record) — avoid boolean ops on pd.NA

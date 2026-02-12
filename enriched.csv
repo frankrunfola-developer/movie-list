@@ -1,7 +1,7 @@
-Row,Title,Year,Genre,imdbRating,Actors (Main),BoxOffice
+Row,Title,Year,Genre,imdbRating,Actors,BoxOffice
 1,10 Things I Hate About You,1999,"Comedy, Drama, Romance",7.4,"Heath Ledger, Julia Stiles, Joseph Gordon-Levitt","$38,178,166"
 2,12 Angry Men,1957,"Crime, Drama",9.0,"Henry Fonda, Lee J. Cobb, Martin Balsam",N/A
-3,13 Cloverfield Lane,,,NOT FOUND: Movie not found!,,
+3,10 Cloverfield Lane,2016,"Drama, Horror, Sci-Fi",7.2,"John Goodman, Mary Elizabeth Winstead, John Gallagher Jr.","$72,082,998"
 4,13 Going On 30,2004,"Comedy, Fantasy, Romance",6.3,"Jennifer Garner, Mark Ruffalo, Judy Greer","$57,231,747"
 5,2 Guns,2013,"Action, Comedy, Crime",6.7,"Denzel Washington, Mark Wahlberg, Paula Patton","$75,612,460"
 6,2001: A Space Odyssey,1968,"Adventure, Sci-Fi",8.3,"Keir Dullea, Gary Lockwood, William Sylvester","$60,481,243"
@@ -147,7 +147,7 @@ Row,Title,Year,Genre,imdbRating,Actors (Main),BoxOffice
 146,Fight Club,1999,"Crime, Drama, Thriller",8.8,"Brad Pitt, Edward Norton, Meat Loaf","$37,030,102"
 147,First Kid,1996,"Comedy, Family",5.3,"Sinbad, Brock Pierce, Blake Boyd","$26,491,793"
 148,First Knight,1995,"Action, Adventure, Drama",6.0,"Sean Connery, Richard Gere, Julia Ormond","$37,600,435"
-149,FFive Nights at Freddy's,,,NOT FOUND: Movie not found!,,
+149,Five Nights at Freddy's,2023,"Horror, Mystery, Thriller",5.4,"Josh Hutcherson, Piper Rubio, Elizabeth Lail","$137,275,620"
 150,Focus,2015,"Comedy, Crime, Drama",6.6,"Will Smith, Margot Robbie, Rodrigo Santoro","$53,862,963"
 151,Fools Rush In,1997,"Comedy, Drama, Romance",6.1,"Matthew Perry, Salma Hayek, Jon Tenney","$29,481,428"
 152,For Love Of The Game,1999,"Drama, Romance, Sport",6.6,"Kevin Costner, Kelly Preston, John C. Reilly","$35,188,640"
@@ -261,7 +261,7 @@ Row,Title,Year,Genre,imdbRating,Actors (Main),BoxOffice
 260,Mission To Mars,2000,"Adventure, Sci-Fi, Thriller",5.7,"Tim Robbins, Gary Sinise, Don Cheadle","$60,883,407"
 261,Money Train,1995,"Action, Comedy, Crime",5.7,"Wesley Snipes, Woody Harrelson, Jennifer Lopez","$35,431,113"
 262,Moneyball,2011,"Biography, Drama, Sport",7.6,"Brad Pitt, Robin Wright, Jonah Hill","$75,605,492"
-263,Monsters Ball,2013,"Short, Comedy, Drama",N/A,Destiny Washington,N/A
+263,Monster's Ball,2001,"Drama, Romance",7.0,"Billy Bob Thornton, Halle Berry, Taylor Simpson","$31,273,922"
 264,Mr. & Mrs. Smith,2005,"Action, Comedy, Crime",6.5,"Brad Pitt, Angelina Jolie, Adam Brody","$186,336,279"
 265,Mr. Deeds,2002,"Comedy, Romance",5.8,"Adam Sandler, Winona Ryder, John Turturro","$126,293,452"
 266,Mrs. Doubtfire,1993,"Comedy, Drama, Family",7.1,"Robin Williams, Sally Field, Pierce Brosnan","$219,195,243"
@@ -483,7 +483,7 @@ Row,Title,Year,Genre,imdbRating,Actors (Main),BoxOffice
 482,Unforgiven,1992,"Drama, Western",8.2,"Clint Eastwood, Gene Hackman, Morgan Freeman","$101,167,799"
 483,Unstoppable,2010,"Action, Thriller",6.8,"Denzel Washington, Chris Pine, Rosario Dawson","$81,562,942"
 484,Urban Legend,1998,"Horror, Mystery, Thriller",5.6,"Jared Leto, Alicia Witt, Rebecca Gayheart","$38,072,438"
-485,US Marshals,1998–2004,Documentary,6.3,N/A,
+485,U.S. Marshals,1998,"Action, Crime, Thriller",6.6,"Tommy Lee Jones, Wesley Snipes, Robert Downey Jr.","$57,167,405"
 486,Venom,2018,"Action, Adventure, Sci-Fi",6.6,"Tom Hardy, Michelle Williams, Riz Ahmed","$213,515,506"
 487,Vertical Limit,2000,"Action, Adventure, Drama",6.0,"Scott Glenn, Chris O'Donnell, Bill Paxton","$69,243,859"
 488,Volcano,1997,"Action, Drama, Sci-Fi",5.6,"Tommy Lee Jones, Anne Heche, Gaby Hoffmann","$49,323,468"
