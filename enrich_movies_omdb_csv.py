@@ -185,7 +185,7 @@ def main() -> int:
                 )
             else:
                 err = clean_text((data or {}).get("Error", "Unknown"))
-                print(f"[{i+1}/{total}] {src} NOT FOUND {title:<{40}} {year:<{10}}  {err}")
+                print(f"[{i+1}/{total}] {src:<{15}} NOT FOUND {title:<{40}} {year:<{10}}  {err}")
 
             if args.print_json:
                 print(f"JSON: {data}\n")
