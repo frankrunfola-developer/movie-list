@@ -42,7 +42,7 @@ Set it:
 
 ### Windows (PowerShell)
 ```powershell
-setx OMDB_API_KEY "YOUR_KEY_HERE"
+setx OMDB_API_KEY "7ff6c487"
 # reopen terminal after running setx
 ```
 
